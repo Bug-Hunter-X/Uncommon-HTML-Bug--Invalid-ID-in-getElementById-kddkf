@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This paragraph is inside a div with a valid id.</p>
+  </div>
+  <script>
+    //Correctly access an element with a valid id.
+    let element = document.getElementById("myDiv");
+    if(element){
+        console.log(element.innerHTML);
+    }else{
+        console.log("Element not found");
+    }
+  </script>
+</body>
+</html>
