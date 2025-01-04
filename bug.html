@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This paragraph is inside a div with an invalid id.</p>
+  </div>
+  <script>
+    //Attempt to access an element with an id containing invalid characters.
+    let element = document.getElementById("my-div");
+    if(element){
+        console.log(element.innerHTML);
+    }else{
+        console.log("Element not found");
+    }
+  </script>
+</body>
+</html>
